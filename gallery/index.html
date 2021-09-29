@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery — GeoViews 1.9.2+gad6e3f0-dirty documentation</title>
+<link href="../_static/css/theme.css" rel="stylesheet"/>
+<link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet"/>
+<link href="../_static/vendor/fontawesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css">
+<link href="../_static/basic.css" rel="stylesheet" type="text/css">
+<link href="../_static/togglebutton.css" rel="stylesheet" type="text/css">
+<link href="../_static/mystnb.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/nbsite.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/custom.css" rel="stylesheet" type="text/css"/>
+<link as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js" rel="preload"/>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/togglebutton.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+<link href="../_static/favicon.ico" rel="shortcut icon">
+<link href="../about.html" rel="author" title="About these documents"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="../topics.html" rel="next" title="Topics"/>
+<link href="../user_guide/Annotators.html" rel="prev" title="Annotators"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</link></link></link></link></head>
+<body data-offset="80" data-spy="scroll" data-target="#bd-toc-nav">
+<div class="container-fluid" id="banner"></div>
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+<div id="navbar-start">
+<a class="navbar-brand" href="../index.html">
+<img alt="logo" class="logo" src="../_static/logo_horizontal.png"/>
+</a>
+</div>
+<button aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar-collapsible" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="col-lg-9 collapse navbar-collapse" id="navbar-collapsible">
+<div class="mr-auto" id="navbar-center">
+<div class="navbar-center-item">
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="toctree-l1 nav-item">
+<a class="reference internal nav-link" href="../user_guide/index.html">
+  User Guide
+ </a>
+</li>
+<li class="toctree-l1 current active nav-item">
+<a class="current reference internal nav-link" href="#">
+  Gallery
+ </a>
+</li>
+<li class="toctree-l1 nav-item">
+<a class="reference internal nav-link" href="../topics.html">
+  Topics
+ </a>
+</li>
+<li class="toctree-l1 nav-item">
+<a class="reference internal nav-link" href="../releases.html">
+  Releases
+ </a>
+</li>
+<li class="toctree-l1 nav-item">
+<a class="reference external nav-link" href="https://github.com/holoviz/geoviews">
+  Github Source
+ </a>
+</li>
+<li class="toctree-l1 nav-item">
+<a class="reference internal nav-link" href="../about.html">
+  About
+ </a>
+</li>
+</ul>
+</div>
+</div>
+<div id="navbar-end">
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/holoviz/geoviews" rel="noopener" target="_blank" title="GitHub">
+<span><i class="fab fa-github-square"></i></span>
+<label class="sr-only">GitHub</label>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://twitter.com/HoloViews" rel="noopener" target="_blank" title="Twitter">
+<span><i class="fab fa-twitter-square"></i></span>
+<label class="sr-only">Twitter</label>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://discourse.holoviz.org/" rel="noopener" target="_blank" title="Discourse">
+<span><i class="fab fa-discourse"></i></span>
+<label class="sr-only">Discourse</label>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="container-xl">
+<div class="row">
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="col-12 col-md-2 bd-sidebar"><form action="../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="icon fas fa-search"></i>
+<input aria-label="Search the docs ..." autocomplete="off" class="form-control" id="search-input" name="q" placeholder="Search the docs ..." type="search"/>
+</form><nav aria-label="Main navigation" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item active">
+</div>
+</nav>
+</div>
+<div class="d-none d-xl-block col-xl-2 bd-toc">
+<div class="toc-item">
+<nav id="bd-toc-nav">
+</nav>
+</div>
+<div class="toc-item">
+</div>
+</div>
+<main class="col-12 col-md-10 col-xl-8 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+<div>
+<div class="section" id="gallery">
+<h1>Gallery<a class="headerlink" href="#gallery" title="Permalink to this headline">¶</a></h1>
+<script>
+function gallery_toggle(input) {
+    backends = ['bokeh', 'matplotlib'];
+    for (i in backends) {
+        entries = $('.'+backends[i]+'_example');
+        if (backends[i] == input) {
+            entries.show();
+        } else {
+            entries.hide()
+        }
+    }
+}
+</script>
+<ul class="tab">
+<li>
+<input checked="checked" id="tab1" name="tab" onclick="gallery_toggle('Bokeh'.toLowerCase())" type="radio">
+<label for="tab1">Bokeh</label>
+</input></li>
+<li>
+<input id="tab2" name="tab" onclick="gallery_toggle('Matplotlib'.toLowerCase())" type="radio"/>
+<label for="tab2">Matplotlib</label>
+</li>
+</ul><div class="section sphx-glr-section" id="section"></div><br/><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Airport Graph"><div class="figure align-default" id="id1">
+<img alt="../_images/airport_graph.png" src="../_images/airport_graph.png">
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/airport_graph.html#bokeh-gallery-airport-graph"><span class="std std-ref">Airport Graph</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</img></div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Brexit Choropleth"><div class="figure align-default" id="id2">
+<img alt="../_images/brexit_choropleth.png" src="../_images/brexit_choropleth.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/brexit_choropleth.html#bokeh-gallery-brexit-choropleth"><span class="std std-ref">Brexit Choropleth</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="City Populations 2050"><div class="figure align-default" id="id3">
+<img alt="../_images/city_populations_2050.png" src="../_images/city_populations_2050.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/city_populations_2050.html#bokeh-gallery-city-populations-2050"><span class="std std-ref">City Populations 2050</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Filled Contours"><div class="figure align-default" id="id4">
+<img alt="../_images/filled_contours.png" src="../_images/filled_contours.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/filled_contours.html#bokeh-gallery-filled-contours"><span class="std std-ref">Filled Contours</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Great Circle"><div class="figure align-default" id="id5">
+<img alt="../_images/great_circle.png" src="../_images/great_circle.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/great_circle.html#bokeh-gallery-great-circle"><span class="std std-ref">Great Circle</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Katrina Track"><div class="figure align-default" id="id6">
+<img alt="../_images/katrina_track.png" src="../_images/katrina_track.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/katrina_track.html#bokeh-gallery-katrina-track"><span class="std std-ref">Katrina Track</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="New York Boroughs"><div class="figure align-default" id="id7">
+<img alt="../_images/new_york_boroughs.png" src="../_images/new_york_boroughs.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/new_york_boroughs.html#bokeh-gallery-new-york-boroughs"><span class="std std-ref">New York Boroughs</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Orthographic Vectorfield"><div class="figure align-default" id="id8">
+<img alt="../_images/orthographic_vectorfield.png" src="../_images/orthographic_vectorfield.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/orthographic_vectorfield.html#bokeh-gallery-orthographic-vectorfield"><span class="std std-ref">Orthographic Vectorfield</span></a></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Tile Sources"><div class="figure align-default" id="id9">
+<img alt="../_images/tile_sources.png" src="../_images/tile_sources.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/tile_sources.html#bokeh-gallery-tile-sources"><span class="std std-ref">Tile Sources</span></a></span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Trimesh Uk"><div class="figure align-default" id="id10">
+<img alt="../_images/trimesh_uk.png" src="../_images/trimesh_uk.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/trimesh_uk.html#bokeh-gallery-trimesh-uk"><span class="std std-ref">Trimesh Uk</span></a></span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Vectorfield Example"><div class="figure align-default" id="id11">
+<img alt="../_images/vectorfield_example.png" src="../_images/vectorfield_example.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/vectorfield_example.html#bokeh-gallery-vectorfield-example"><span class="std std-ref">Vectorfield Example</span></a></span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="World Population"><div class="figure align-default" id="id12">
+<img alt="../_images/world_population.png" src="../_images/world_population.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/world_population.html#bokeh-gallery-world-population"><span class="std std-ref">World Population</span></a></span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Xarray Image"><div class="figure align-default" id="id13">
+<img alt="../_images/xarray_image.png" src="../_images/xarray_image.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/xarray_image.html#bokeh-gallery-xarray-image"><span class="std std-ref">Xarray Image</span></a></span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer bokeh_example" tooltip="Xarray Quadmesh"><div class="figure align-default" id="id14">
+<img alt="../_images/xarray_quadmesh.png" src="../_images/xarray_quadmesh.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="bokeh/xarray_quadmesh.html#bokeh-gallery-xarray-quadmesh"><span class="std std-ref">Xarray Quadmesh</span></a></span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Airport Graph"><div class="figure align-default" id="id15">
+<img alt="../_images/airport_graph1.png" src="../_images/airport_graph1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/airport_graph.html#matplotlib-gallery-airport-graph"><span class="std std-ref">Airport Graph</span></a></span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Brexit Choropleth"><div class="figure align-default" id="id16">
+<img alt="../_images/brexit_choropleth1.png" src="../_images/brexit_choropleth1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/brexit_choropleth.html#matplotlib-gallery-brexit-choropleth"><span class="std std-ref">Brexit Choropleth</span></a></span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="City Population"><div class="figure align-default" id="id17">
+<img alt="../_images/city_population.png" src="../_images/city_population.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/city_population.html#matplotlib-gallery-city-population"><span class="std std-ref">City Population</span></a></span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Filled Contours"><div class="figure align-default" id="id18">
+<img alt="../_images/filled_contours1.png" src="../_images/filled_contours1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/filled_contours.html#matplotlib-gallery-filled-contours"><span class="std std-ref">Filled Contours</span></a></span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Great Circle"><div class="figure align-default" id="id19">
+<img alt="../_images/great_circle1.png" src="../_images/great_circle1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/great_circle.html#matplotlib-gallery-great-circle"><span class="std std-ref">Great Circle</span></a></span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Katrina Track"><div class="figure align-default" id="id20">
+<img alt="../_images/katrina_track1.png" src="../_images/katrina_track1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/katrina_track.html#matplotlib-gallery-katrina-track"><span class="std std-ref">Katrina Track</span></a></span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="New York Boroughs"><div class="figure align-default" id="id21">
+<img alt="../_images/new_york_boroughs1.png" src="../_images/new_york_boroughs1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/new_york_boroughs.html#matplotlib-gallery-new-york-boroughs"><span class="std std-ref">New York Boroughs</span></a></span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Orthographic Vectorfield"><div class="figure align-default" id="id22">
+<img alt="../_images/orthographic_vectorfield1.png" src="../_images/orthographic_vectorfield1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/orthographic_vectorfield.html#matplotlib-gallery-orthographic-vectorfield"><span class="std std-ref">Orthographic Vectorfield</span></a></span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Tile Sources"><div class="figure align-default" id="id23">
+<img alt="../_images/tile_sources1.png" src="../_images/tile_sources1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/tile_sources.html#matplotlib-gallery-tile-sources"><span class="std std-ref">Tile Sources</span></a></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Trimesh Uk"><div class="figure align-default" id="id24">
+<img alt="../_images/trimesh_uk1.png" src="../_images/trimesh_uk1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/trimesh_uk.html#matplotlib-gallery-trimesh-uk"><span class="std std-ref">Trimesh Uk</span></a></span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Vectorfield Example"><div class="figure align-default" id="id25">
+<img alt="../_images/vectorfield_example1.png" src="../_images/vectorfield_example1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/vectorfield_example.html#matplotlib-gallery-vectorfield-example"><span class="std std-ref">Vectorfield Example</span></a></span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="World Population"><div class="figure align-default" id="id26">
+<img alt="../_images/world_population1.png" src="../_images/world_population1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/world_population.html#matplotlib-gallery-world-population"><span class="std std-ref">World Population</span></a></span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Xarray Image"><div class="figure align-default" id="id27">
+<img alt="../_images/xarray_image1.png" src="../_images/xarray_image1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/xarray_image.html#matplotlib-gallery-xarray-image"><span class="std std-ref">Xarray Image</span></a></span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer matplotlib_example" tooltip="Xarray Quadmesh"><div class="figure align-default" id="id28">
+<img alt="../_images/xarray_quadmesh1.png" src="../_images/xarray_quadmesh1.png"/>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="matplotlib/xarray_quadmesh.html#matplotlib-gallery-xarray-quadmesh"><span class="std std-ref">Xarray Quadmesh</span></a></span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
+</div>
+</div><div style="clear:both"></div><script>
+    $(document).ready(function () {
+        backends = ['matplotlib'];
+        for (var i=0; i<backends.length; i++){
+            $('.'+backends[i]+'_example').hide();
+        }
+    });
+</script></div>
+</div>
+<div class="prev-next-bottom">
+<a class="left-prev" href="../user_guide/Annotators.html" id="prev-link" title="previous page">Annotators</a>
+<a class="right-next" href="../topics.html" id="next-link" title="next page">Topics</a>
+</div>
+</main>
+</div>
+</div>
+<script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+<footer class="footer mt-5 mt-md-0">
+<div class="container">
+<div class="footer-item">
+<p class="copyright">
+    © Copyright 2018-2021 HoloViz Developers.<br>
+</br></p>
+</div>
+<div class="footer-item">
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br/>
+</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
